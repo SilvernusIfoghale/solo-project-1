@@ -149,7 +149,7 @@ footer {
     justify-content: flex-end;
     min-height: 45%;
     gap: 5px;
-    margin-top: 400px;
+    margin-top: 280px;
   }
 
   .box {
@@ -171,7 +171,7 @@ footer {
   .box-text {
     background-color: #9c9895;
     border-radius: 10px;
-    padding: 0px 5px;
+    padding: 5px 15px;
     color: #fff;
     letter-spacing: 0.01rem;
   }
@@ -187,9 +187,9 @@ footer {
     text-align: center;
     color: #46b3c9;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 18px;
     letter-spacing: 0.08rem;
-    margin: 0px;
+    margin: 15px 0;
   }
   article {
     display: flex;
