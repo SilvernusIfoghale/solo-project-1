@@ -4,10 +4,20 @@
   font-family: sans-serif;
 }
 
+body {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 header {
   min-height: 80%;
+  min-width: 100%;
   background-image: url("images/dsust.jpg");
   background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
 }
 
 .hero-container {
@@ -15,8 +25,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  height: 75%;
-  gap: 25px;
+  min-height: 80%;
+  gap: 20px;
 }
 
 .box {
@@ -120,4 +130,103 @@ footer {
   font-weight: bold;
   font-size: large;
   line-height: 4rem;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    height: 200px;
+    width: 100px;
+    background-image: url("images/dsust.jpg");
+    /* background-size: auto; */
+    /* background-repeat: no-repeat; */
+    background-position: center;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 45%;
+    gap: 5px;
+    margin-top: 400px;
+  }
+
+  .box {
+    background-color: #d2b49f;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #fff;
+    font-size: small;
+    letter-spacing: 0.03rem;
+  }
+
+  .box:hover {
+    background-color: #f0b58b;
+    color: #fff5f5;
+    cursor: pointer;
+  }
+
+  .box-text {
+    background-color: #9c9895;
+    border-radius: 10px;
+    padding: 0px 5px;
+    color: #fff;
+    letter-spacing: 0.01rem;
+  }
+  .img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
+    margin: 0px;
+  }
+
+  section {
+    text-align: center;
+    color: #46b3c9;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.08rem;
+    margin: 0px;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #e6d1c2;
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+    border-bottom: 5px solid #553800;
+  }
+
+  #profile-img {
+    width: 140px;
+  }
+
+  .guide-text {
+    text-align: center;
+    line-height: 1.5rem;
+  }
+
+  .text-bigBold {
+    font-weight: bold;
+    font-size: larger;
+    line-height: 3rem;
+  }
+
+  .text-bold {
+    font-weight: bold;
+    font-size: large;
+    line-height: 3rem;
+  }
 }
